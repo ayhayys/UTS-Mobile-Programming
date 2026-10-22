@@ -4,7 +4,6 @@ import '../core/app_theme.dart';
 import '../models/match_detail_model.dart';
 import '../models/match_model.dart';
 
-/// Lapangan berisi formasi kedua tim (tuan rumah di bawah, tamu di atas).
 class FormationPitch extends StatelessWidget {
   final Team homeTeam;
   final Team awayTeam;
@@ -66,7 +65,7 @@ class FormationPitch extends StatelessWidget {
 
     final starters = lineup.starters;
     final lines = <List<LineupPlayer>>[
-      [starters[0]], // kiper
+      [starters[0]],
     ];
     var cursor = 1;
     for (final count in rows) {
