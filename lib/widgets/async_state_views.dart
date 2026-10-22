@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../core/app_theme.dart';
 
-/// Tampilan saat data sedang dimuat (state Loading pada FutureBuilder).
 class LoadingView extends StatelessWidget {
   final String message;
   const LoadingView({super.key, this.message = 'Loading matches…'});
@@ -32,7 +31,6 @@ class LoadingView extends StatelessWidget {
   }
 }
 
-/// Tampilan saat permintaan gagal (state Error pada FutureBuilder).
 class ErrorView extends StatelessWidget {
   final String message;
   final VoidCallback onRetry;
@@ -76,7 +74,6 @@ class ErrorView extends StatelessWidget {
   }
 }
 
-/// Tampilan saat data berhasil diambil tetapi kosong.
 class EmptyView extends StatelessWidget {
   final String message;
   final IconData icon;
