@@ -5,7 +5,6 @@ import '../models/match_model.dart';
 import '../pages/match_detail_page.dart';
 import 'team_crest.dart';
 
-/// Carousel kartu gelap "LIVE NOW" (atau hasil terbaru jika tidak ada yang live).
 class LiveCarousel extends StatefulWidget {
   final List<MatchModel> matches;
   const LiveCarousel({super.key, required this.matches});
@@ -89,7 +88,6 @@ class LiveMatchCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // Header: liga + menit
             Row(
               children: [
                 _LeagueIcon(url: match.leagueLogo),
@@ -112,7 +110,6 @@ class LiveMatchCard extends StatelessWidget {
                 ),
               ],
             ),
-            // Tim & skor
             Row(
               children: [
                 Expanded(child: _TeamBlock(team: match.home)),
@@ -132,7 +129,6 @@ class LiveMatchCard extends StatelessWidget {
                 Expanded(child: _TeamBlock(team: match.away)),
               ],
             ),
-            // Pencetak gol
             SizedBox(
               height: 48,
               child: Row(
