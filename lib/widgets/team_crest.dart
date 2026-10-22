@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../core/app_theme.dart';
 import '../models/match_model.dart';
 
-/// Logo tim dari jaringan, dengan fallback lingkaran berisi singkatan tim.
 class TeamCrest extends StatelessWidget {
   final Team team;
   final double size;
