@@ -4,7 +4,6 @@ import 'package:intl/intl.dart';
 import '../core/app_theme.dart';
 import '../core/json_utils.dart';
 
-/// Baris pemilih tanggal (Today + 4 hari ke depan + tombol kalender).
 class DateSelector extends StatelessWidget {
   final DateTime selected;
   final ValueChanged<DateTime> onSelected;
