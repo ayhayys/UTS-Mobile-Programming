@@ -18,7 +18,6 @@ BoxDecoration _tileDecoration() => BoxDecoration(
       border: Border.all(color: AppColors.border),
     );
 
-/// Baris pertandingan mendatang (atau live) seperti "Upcoming Fixtures".
 class FixtureTile extends StatelessWidget {
   final MatchModel match;
   const FixtureTile({super.key, required this.match});
@@ -105,7 +104,6 @@ class FixtureTile extends StatelessWidget {
   }
 }
 
-/// Baris hasil pertandingan (skor akhir).
 class ResultTile extends StatelessWidget {
   final MatchModel match;
   const ResultTile({super.key, required this.match});
